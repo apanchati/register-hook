@@ -1,0 +1,75 @@
+/*
+  Global.scss contains styles global to the entire project. These include utility styles, which define a single CSS rule in a descriptive manner, and are always
+  prefixed with "u-"
+*/
+
+:root {
+  --baseFontSize: 10px;
+  --loginColor: black;
+}
+
+html {
+  /*
+    Root element has a base font of 10px. the "rem" unit is relative to the base font. With a base font of 10px, we get the following:
+    1px = 0.1rem, so 1rem = 10x, 2rem = 20px, 25px = 2.5rem, and so forth
+  */
+  font-size: var(--baseFontSize);
+  height: 100%;
+}
+
+body {
+  margin: 0px;
+  height: 100%;
+}
+
+h1 {
+  font-size: 3rem !important;
+}
+
+h2 {
+  font-size: 2.4rem !important;
+}
+
+h3 {
+  font-size: 1.8rem !important;
+}
+
+h4 {
+  font-size: 1.6rem !important;
+}
+
+h5 {
+  font-size: 1.2rem !important;
+}
+
+p {
+  font-size: 1.5rem !important;
+}
+
+span {
+  font-size: 1.5rem !important;
+}
+
+td {
+  font-size: 1.5rem !important;
+}
+
+// .dx-field-value:not(.dx-switch):not(.dx-checkbox):not(.dx-button) {
+//   width: unset;
+// }
+
+.main, .main__nav{
+  max-height: 100%;
+}
+
+// Utility Styles (denoted with 'u' prefix)
+.u-no-margin-top {
+  margin-top: 0;
+}
+.u-max-width-200{
+  max-width: 200px;
+}
+
+.padding-bottom30 {
+  padding-bottom: 30px;
+}

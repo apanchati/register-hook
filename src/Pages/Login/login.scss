@@ -1,0 +1,176 @@
+.login-page, .login-form{
+  height: 100%;
+}
+.login-form {
+  display: flex;
+  flex-direction: row;
+}
+.login-form {
+  .login-box__login-button {
+    border: 1px solid var(--loginColor);
+    border-radius: 3px;
+    &:hover {
+      color: white;
+      background-color: var(--loginColor);
+      cursor: pointer;
+    }
+    &:focus {
+      background-color: var(--loginColor);
+      color: white;
+    }
+  }
+  .cisControl {
+    margin-top: 10px;
+    max-width: 166px;
+    width: 100%;
+  }
+  .dx-button {
+    &:hover {
+     background-color: var(--loginColor);
+    }
+    &:focus {
+      background-color: var(--loginColor) !important;
+    }
+  }
+  .cisButton {
+    color: var(--loginColor);
+    background-color: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    width: 100%;
+      &:hover {
+        background-color: var(--loginColor);
+        color: white !important;
+      }
+      &:focus {
+        background-color: var(--loginColor);
+        color: white !important;
+      }
+  }
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+  }
+  input:-webkit-autofill {
+    -webkit-text-fill-color: var(--loginColor);
+  }
+  .login-box__sign-in-text {
+    color: var(--loginColor);
+  }
+  .login-box__login-control {
+    max-width: 50%;
+    width: 300px;
+    color: black;
+  }
+  .dx-field-value {
+    width: 100% !important;
+  }
+  .dx-texteditor-input {
+    // border: solid grey 1px;
+    padding-left: 3px;
+  }
+  .dx-state-hover:after {
+    border-bottom: 1px solid var(--loginColor) !important;
+  }
+  .dx-invalid .dx-texteditor-input {
+    border-bottom: unset;
+    background-color: #ffe6e6;
+    border-color: red;
+  }
+  .dx-invalid .dx-state-hover:after {
+    border-bottom: unset !important;
+  }
+  .dx-texteditor-input {
+    color: var(--loginColor);
+    min-height: 20px;
+    padding-left: 5px !important;
+  }
+  .row2__system-info {
+    color: var(--loginColor);
+  }
+  .error-message {
+    color: red;
+  }
+  .login-form .dx-field-value {
+    width: 100% !important;
+  }
+  .top {
+    width: 100%;
+    height: 15vh;
+  }
+  .login-form__login-title {
+    font-size: 5rem !important;
+    color: white;
+    margin-bottom: 10px;
+  }
+  .login-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 360px;
+  }
+  .login-box .dx-texteditor-container{
+    margin-bottom: 20px;
+  }
+  .login-form__col1{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgba(0,0,0,0.2);
+    background: url('../../Static/Images/space.jpg');
+     background-position: center;
+  }
+  .login-form__col2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgba(255,255,255,1);
+  }
+  .row1{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  .row2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+  }
+  .login-form__company-name{
+    animation: appear 3s;
+    color: white;
+  }
+  .flex1 {
+    flex: 1;
+  }
+  .cisLabel {
+    font-weight: 300;
+  }
+  @keyframes appear {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .login-form__col1 {
+      display: none;
+    }
+    .login-form__col2 {
+      background-color: rgba(255,255,255,1);
+    }
+    #loginBox {
+      max-width: 100%
+    }
+  }
+}

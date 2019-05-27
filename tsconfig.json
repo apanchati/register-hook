@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "dom",
+      "es5",
+      "es2015"
+    ],
+    "target": "es6",
+    // this enables stricter inference for data properties on `this`
+    "strict": true,
+    "module": "esnext", // esnext enables lazy loading import() syntax
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "allowJs": true,
+    "strictPropertyInitialization": false,
+    "baseUrl": "./src",
+    "paths": {
+      "@Images/*": ["Static/Images/*"],
+      "@Common/*":["Common/*"],
+      "@Controls/*":["Components/Controls/*"],
+      "@Containers/*":["Components/Containers/*"],
+      "@Services/*":["Services/*"],
+      "@Utilities/*":["Utilities/*"],
+      "@Models/*": ["Models/*"],
+      "@Mixins/*": ["Mixins/*"]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "dist",
+    "developers",
+    "docs"
+  ]
+}
